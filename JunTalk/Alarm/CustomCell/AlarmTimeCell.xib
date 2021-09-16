@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="AlarmTimeCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="98" id="gkW-PV-GUz" customClass="AlarmTimeCell" customModule="Jun_Alarm" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="380" height="98"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gkW-PV-GUz" id="jAr-Xh-0C7">
+                <rect key="frame" x="0.0" y="0.0" width="380" height="98"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="16:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8xM-CY-YtN">
+                        <rect key="frame" x="9" y="6" width="138.5" height="66"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="55"/>
+                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Alarm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5zW-sT-C0E">
+                        <rect key="frame" x="9" y="66" width="139" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="poM-Hd-4eU">
+                        <rect key="frame" x="313" y="33.5" width="51" height="31"/>
+                        <connections>
+                            <action selector="swAction:" destination="gkW-PV-GUz" eventType="valueChanged" id="FeW-Ec-tFd"/>
+                        </connections>
+                    </switch>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="8xM-CY-YtN" firstAttribute="top" secondItem="jAr-Xh-0C7" secondAttribute="top" constant="6" id="1GH-NF-FOp"/>
+                    <constraint firstItem="5zW-sT-C0E" firstAttribute="leading" secondItem="jAr-Xh-0C7" secondAttribute="leading" constant="9" id="5Z6-sm-1nn"/>
+                    <constraint firstItem="5zW-sT-C0E" firstAttribute="top" secondItem="8xM-CY-YtN" secondAttribute="bottom" constant="-6" id="8Ap-6O-Kfm"/>
+                    <constraint firstItem="poM-Hd-4eU" firstAttribute="top" secondItem="jAr-Xh-0C7" secondAttribute="top" constant="33.5" id="BdV-ON-lvW"/>
+                    <constraint firstItem="poM-Hd-4eU" firstAttribute="centerY" secondItem="jAr-Xh-0C7" secondAttribute="centerY" id="IA9-in-Pxi"/>
+                    <constraint firstAttribute="trailing" secondItem="poM-Hd-4eU" secondAttribute="trailing" constant="18" id="W1N-wO-5tU"/>
+                    <constraint firstAttribute="bottom" secondItem="poM-Hd-4eU" secondAttribute="bottom" constant="33.5" id="u30-Wj-COv"/>
+                    <constraint firstItem="8xM-CY-YtN" firstAttribute="leading" secondItem="jAr-Xh-0C7" secondAttribute="leading" constant="9" id="vAW-wI-Z7f"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="label" destination="5zW-sT-C0E" id="GgW-kb-kdk"/>
+                <outlet property="sw" destination="poM-Hd-4eU" id="fYY-Ym-jmb"/>
+                <outlet property="timeLabel" destination="8xM-CY-YtN" id="om4-O1-xQZ"/>
+            </connections>
+            <point key="canvasLocation" x="169.56521739130437" y="13.392857142857142"/>
+        </tableViewCell>
+    </objects>
+</document>
