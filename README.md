@@ -1,6 +1,7 @@
 # JunTalk
 
-Requirement
-FirebaseStorage-.mp3AuidoFile  contentName&date&duration&.mp3
+Requirement-
+FirebaseStorage-.mp3AuidoFile  
+Ex contentName&date&duration&.mp3
 
 
